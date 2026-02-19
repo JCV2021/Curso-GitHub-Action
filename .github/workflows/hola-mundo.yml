@@ -1,7 +1,7 @@
  name: Aprendiendo GitHub Actions
-  run-name: ¡Estoy aprendiendo GitHub Actions!
-  on: [push]
-  jobs:
+ run-name: Estoy aprendiendo GitHub Actions
+ on: [push]
+ jobs:
     hola-mundo:
       runs-on: ubuntu-latest
       steps:
