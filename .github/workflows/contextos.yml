@@ -1,0 +1,13 @@
+name: Contexto
+
+on: push
+
+jobs:
+  check-main:
+    if: |
+      github.ref_name == 'main' ||
+      github.ref_name == 'aprendiendo-github-actions'
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: echo "Desplegando en la rama $GITHUB_REF_NAME"
